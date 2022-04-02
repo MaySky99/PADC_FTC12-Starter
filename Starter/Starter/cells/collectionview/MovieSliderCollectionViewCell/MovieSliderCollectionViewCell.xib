@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieSliderCollectionViewCell" customModule="Starter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="231"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ugb-e1-XXY">
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="231"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n7E-W3-Tyu">
+                        <rect key="frame" x="157" y="77.5" width="77" height="76"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="77" id="gJO-RO-JBR"/>
+                            <constraint firstAttribute="width" constant="77" id="kOk-dP-oLV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantastic Beasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-rd-Dlq">
+                        <rect key="frame" x="16" y="185.5" width="192" height="29.5"/>
+                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="n7E-W3-Tyu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="GYZ-r7-FuE"/>
+                <constraint firstItem="n7E-W3-Tyu" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Jon-Mv-4OF"/>
+                <constraint firstAttribute="bottom" secondItem="F4h-rd-Dlq" secondAttribute="bottom" constant="16" id="Vq1-tL-gbD"/>
+                <constraint firstItem="F4h-rd-Dlq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="b66-zJ-m3v"/>
+                <constraint firstAttribute="bottom" secondItem="Ugb-e1-XXY" secondAttribute="bottom" id="lz4-zY-ZsL"/>
+                <constraint firstItem="Ugb-e1-XXY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ozv-F3-dx7"/>
+                <constraint firstItem="Ugb-e1-XXY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="t7G-ad-237"/>
+                <constraint firstAttribute="trailing" secondItem="Ugb-e1-XXY" secondAttribute="trailing" id="tkG-XT-6bT"/>
+            </constraints>
+            <size key="customSize" width="391" height="231"/>
+            <connections>
+                <outlet property="imageViewBackdrop" destination="Ugb-e1-XXY" id="vxg-RW-mVd"/>
+                <outlet property="labelContentTitle" destination="F4h-rd-Dlq" id="G9A-GA-Tud"/>
+            </connections>
+            <point key="canvasLocation" x="318.11594202898556" y="143.63839285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

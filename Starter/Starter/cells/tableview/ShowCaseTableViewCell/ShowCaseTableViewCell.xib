@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="265" id="KGk-i7-Jjw" customClass="ShowCaseTableViewCell" customModule="Starter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="263"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOWCASES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLy-pD-wEp">
+                        <rect key="frame" x="20.000000000000007" y="20" width="91.666666666666686" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="BYt-6h-qC6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MORE SHOWCASES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvV-Ek-Ms7">
+                        <rect key="frame" x="290.66666666666669" y="20" width="137.33333333333331" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="DF7-xK-V3Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qKk-hs-WlO">
+                        <rect key="frame" x="0.0" y="50" width="448" height="220"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="220" id="38c-5c-Dlh"/>
+                        </constraints>
+                        <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="20" id="HTW-mA-WJs">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" name="movieshowtime"/>
+                <constraints>
+                    <constraint firstItem="qKk-hs-WlO" firstAttribute="top" secondItem="rLy-pD-wEp" secondAttribute="bottom" constant="5" id="5nK-uf-FnV"/>
+                    <constraint firstAttribute="bottom" secondItem="qKk-hs-WlO" secondAttribute="bottom" constant="8" id="8dM-BG-h9e"/>
+                    <constraint firstAttribute="trailing" secondItem="qvV-Ek-Ms7" secondAttribute="trailing" constant="20" id="OKP-4p-rbr"/>
+                    <constraint firstAttribute="trailing" secondItem="qKk-hs-WlO" secondAttribute="trailing" id="hZo-vc-uTE"/>
+                    <constraint firstItem="qKk-hs-WlO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hbo-qD-V11"/>
+                    <constraint firstItem="rLy-pD-wEp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ouf-xl-JP4"/>
+                    <constraint firstItem="rLy-pD-wEp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="pJi-aC-eaM"/>
+                    <constraint firstItem="qvV-Ek-Ms7" firstAttribute="centerY" secondItem="rLy-pD-wEp" secondAttribute="centerY" id="t7D-w1-ukQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionViewShowCase" destination="qKk-hs-WlO" id="Cz1-U0-Uvl"/>
+                <outlet property="heightForCollectionViewShowCase" destination="38c-5c-Dlh" id="4pA-ZV-vWz"/>
+                <outlet property="lblmoreShowCases" destination="qvV-Ek-Ms7" id="vdk-M9-4fD"/>
+                <outlet property="lblshowCases" destination="rLy-pD-wEp" id="wfi-IG-AMH"/>
+            </connections>
+            <point key="canvasLocation" x="230.76923076923077" y="168.8388625592417"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="movieshowtime">
+            <color red="0.12156862745098039" green="0.14509803921568629" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
